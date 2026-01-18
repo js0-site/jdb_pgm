@@ -1,0 +1,231 @@
+   Compiling jdb_pc v0.1.0 (/Users/z/js0/jdb_pgm/jdb_pc)
+    Finished `bench` profile [optimized] target(s) in 14.30s
+Gnuplot not found, using plotters backend
+DEBUG: Dataset Size N = 131072000
+Benchmarking KeyOffsets/Pc/Build
+Benchmarking KeyOffsets/Pc/Build: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Pc/Build: Collecting 10 samples in estimated 13.757 s (20 iterations)
+Benchmarking KeyOffsets/Pc/Build: Analyzing
+KeyOffsets/Pc/Build     time:   [667.64 ms 673.71 ms 681.25 ms]
+                        change: [-0.5795% +0.5683% +1.8491%] (p = 0.40 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"KeyOffsets/Pc/Build","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Pc_Build","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1334630458.0,1332301000.0,1333489375.0,1336327542.0,1330187375.0,1333260125.0,1344182791.0,1351014292.0,1400812750.0,1377903667.0],"unit":"ns","throughput":[],"typical":{"estimate":673705468.75,"lower_bound":667642895.8,"upper_bound":681250183.35,"unit":"ns"},"mean":{"estimate":673705468.75,"lower_bound":667642895.8,"upper_bound":681250183.35,"unit":"ns"},"median":{"estimate":667739500.0,"lower_bound":666447593.75,"upper_bound":680521614.5,"unit":"ns"},"median_abs_dev":{"estimate":3139266.4505168796,"lower_bound":507913.91743272543,"upper_bound":15438993.298003078,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":0.005683351049554863,"lower_bound":-0.005795285102508095,"upper_bound":0.01849127216201043,"unit":"%"},"median":{"estimate":-0.0013350797050651897,"lower_bound":-0.0077628214567474485,"upper_bound":0.015253982965601987,"unit":"%"},"change":"NoChange"}}
+{"reason": "custom-metric", "id": "KeyOffsets/Pc/Size", "estimate": 181171968}
+Benchmarking KeyOffsets/Pc/RandomGet
+Benchmarking KeyOffsets/Pc/RandomGet: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Pc/RandomGet: Collecting 10 samples in estimated 10.499 s (20 iterations)
+Benchmarking KeyOffsets/Pc/RandomGet: Analyzing
+KeyOffsets/Pc/RandomGet time:   [512.72 ms 527.79 ms 547.42 ms]
+                        change: [+358.05% +377.39% +398.80%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"KeyOffsets/Pc/RandomGet","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Pc_RandomGet","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1027580208.0,1195545500.0,1018217209.0,1019835125.0,1031164375.0,1030620708.0,1131215542.0,1053752417.0,1006441167.0,1041515833.0],"unit":"ns","throughput":[],"typical":{"estimate":527794404.2,"lower_bound":512720680.55625,"upper_bound":547424645.85,"unit":"ns"},"mean":{"estimate":527794404.2,"lower_bound":512720680.55625,"upper_bound":547424645.85,"unit":"ns"},"median":{"estimate":515446270.75,"lower_bound":509917562.5,"upper_bound":543182843.75,"unit":"ns"},"median_abs_dev":{"estimate":8796543.260680139,"lower_bound":1328471.4749649167,"upper_bound":37285474.560150504,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":3.7738520405668066,"lower_bound":3.5805161074954044,"upper_bound":3.987990214029061,"unit":"%"},"median":{"estimate":3.7287945935216316,"lower_bound":3.4949325701880687,"upper_bound":3.9067667670989916,"unit":"%"},"change":"Regressed"}}
+Benchmarking KeyOffsets/Pc/Iter
+Benchmarking KeyOffsets/Pc/Iter: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 10.1s or enable flat sampling.
+Benchmarking KeyOffsets/Pc/Iter: Collecting 10 samples in estimated 10.113 s (55 iterations)
+Benchmarking KeyOffsets/Pc/Iter: Analyzing
+KeyOffsets/Pc/Iter      time:   [176.91 ms 177.61 ms 179.36 ms]
+                        change: [-0.3727% +0.5824% +2.0494%] (p = 0.40 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"KeyOffsets/Pc/Iter","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Pc_Iter","iteration_count":[1,2,3,4,5,6,7,8,9,10],"measured_values":[178710583.0,359985958.0,537498291.0,749603125.0,888877792.0,1065238291.0,1247565084.0,1415161709.0,1589847708.0,1767030084.0],"unit":"ns","throughput":[],"typical":{"estimate":177606722.20779222,"lower_bound":176910886.9535864,"upper_bound":179357820.5994327,"unit":"ns"},"mean":{"estimate":178905726.46035713,"lower_bound":177458178.40922323,"upper_bound":181030567.78284526,"unit":"ns"},"median":{"estimate":177999570.91428572,"lower_bound":176895213.625,"upper_bound":179351781.0,"unit":"ns"},"median_abs_dev":{"estimate":1683405.8160010725,"lower_bound":284963.4615258784,"upper_bound":2770976.1102653565,"unit":"ns"},"slope":{"estimate":177606722.20779222,"lower_bound":176910886.9535864,"upper_bound":179357820.5994327,"unit":"ns"},"change":{"mean":{"estimate":0.005823802309618653,"lower_bound":-0.0037271684555201545,"upper_bound":0.020494295672549106,"unit":"%"},"median":{"estimate":0.0008974839476543206,"lower_bound":-0.005139320644040657,"upper_bound":0.010431064391678069,"unit":"%"},"change":"NoChange"}}
+Benchmarking KeyOffsets/Pc/RevIter
+Benchmarking KeyOffsets/Pc/RevIter: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 14.6s or enable flat sampling.
+Benchmarking KeyOffsets/Pc/RevIter: Collecting 10 samples in estimated 14.645 s (55 iterations)
+Benchmarking KeyOffsets/Pc/RevIter: Analyzing
+KeyOffsets/Pc/RevIter   time:   [259.54 ms 260.41 ms 261.31 ms]
+                        change: [+0.0439% +0.5909% +1.1231%] (p = 0.06 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"KeyOffsets/Pc/RevIter","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Pc_RevIter","iteration_count":[1,2,3,4,5,6,7,8,9,10],"measured_values":[261741125.0,519637083.0,781518958.0,1050967417.0,1308231375.0,1569957208.0,1823793416.0,2079089708.0,2327561333.0,2609860708.0],"unit":"ns","throughput":[],"typical":{"estimate":260405902.88051948,"lower_bound":259542003.74924627,"upper_bound":261312862.10452747,"unit":"ns"},"mean":{"estimate":260814577.6510318,"lower_bound":260101372.13158733,"upper_bound":261506584.20184526,"unit":"ns"},"median":{"estimate":260763993.6857143,"lower_bound":259886213.5,"upper_bound":261693700.0,"unit":"ns"},"median_abs_dev":{"estimate":1317899.6440625691,"lower_bound":80141.69447719314,"upper_bound":2123394.455352238,"unit":"ns"},"slope":{"estimate":260405902.88051948,"lower_bound":259542003.74924627,"upper_bound":261312862.10452747,"unit":"ns"},"change":{"mean":{"estimate":0.005908785641866698,"lower_bound":0.0004394470167629241,"upper_bound":0.01123077728516525,"unit":"%"},"median":{"estimate":0.006949456645691576,"lower_bound":0.0018644064639361524,"upper_bound":0.011705389479871004,"unit":"%"},"change":"NoChange"}}
+DEBUG: Dataset Size N = 131072000
+Benchmarking KeyOffsets/Sucds/Build
+Benchmarking KeyOffsets/Sucds/Build: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 12.4s.
+Benchmarking KeyOffsets/Sucds/Build: Collecting 10 samples in estimated 12.370 s (10 iterations)
+Benchmarking KeyOffsets/Sucds/Build: Analyzing
+KeyOffsets/Sucds/Build  time:   [1.2372 s 1.2481 s 1.2607 s]
+                        change: [+1.7015% +2.6586% +3.6992%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"KeyOffsets/Sucds/Build","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Sucds_Build","iteration_count":[1,1,1,1,1,1,1,1,1,1],"measured_values":[1271683542.0,1219922541.0,1228950125.0,1244541125.0,1290173333.0,1247618375.0,1252429042.0,1242798709.0,1240777250.0,1242430667.0],"unit":"ns","throughput":[],"typical":{"estimate":1248132470.9,"lower_bound":1237173633.3,"upper_bound":1260675306.075,"unit":"ns"},"mean":{"estimate":1248132470.9,"lower_bound":1237173633.3,"upper_bound":1260675306.075,"unit":"ns"},"median":{"estimate":1243669917.0,"lower_bound":1235690396.0,"upper_bound":1259650958.5,"unit":"ns"},"median_abs_dev":{"estimate":9420131.110659242,"lower_bound":1564482.4876248837,"upper_bound":33643376.54491067,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":0.026586206387848366,"lower_bound":0.017015426152506848,"upper_bound":0.036991775370010485,"unit":"%"},"median":{"estimate":0.025287344243836163,"lower_bound":0.01636229540475287,"upper_bound":0.033757004858392614,"unit":"%"},"change":"Regressed"}}
+{"reason": "custom-metric", "id": "KeyOffsets/Sucds/Size", "estimate": 115407691}
+Benchmarking KeyOffsets/Sucds/RandomGet
+Benchmarking KeyOffsets/Sucds/RandomGet: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Sucds/RandomGet: Collecting 10 samples in estimated 14.844 s (20 iterations)
+Benchmarking KeyOffsets/Sucds/RandomGet: Analyzing
+KeyOffsets/Sucds/RandomGet
+                        time:   [666.86 ms 676.02 ms 686.05 ms]
+                        change: [+226.15% +236.72% +246.33%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"KeyOffsets/Sucds/RandomGet","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Sucds_RandomGet","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1406413958.0,1347090959.0,1374623875.0,1329439125.0,1361612584.0,1320725042.0,1312162542.0,1339084625.0,1328557250.0,1400659500.0],"unit":"ns","throughput":[],"typical":{"estimate":676018473.0,"lower_bound":666861885.5,"upper_bound":686054772.85875,"unit":"ns"},"mean":{"estimate":676018473.0,"lower_bound":666861885.5,"upper_bound":686054772.85875,"unit":"ns"},"median":{"estimate":671543896.0,"lower_bound":662541041.75,"upper_bound":690568021.0,"unit":"ns"},"median_abs_dev":{"estimate":15154967.17324555,"lower_bound":3556741.769555211,"upper_bound":28101184.704454243,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":2.3671899509779335,"lower_bound":2.261509968540582,"upper_bound":2.463268531672343,"unit":"%"},"median":{"estimate":2.422768794173876,"lower_bound":2.2547570043491483,"upper_bound":2.516299675287635,"unit":"%"},"change":"Regressed"}}
+Benchmarking KeyOffsets/Sucds/Iter
+Benchmarking KeyOffsets/Sucds/Iter: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 10.2s or enable flat sampling.
+Benchmarking KeyOffsets/Sucds/Iter: Collecting 10 samples in estimated 10.170 s (55 iterations)
+Benchmarking KeyOffsets/Sucds/Iter: Analyzing
+KeyOffsets/Sucds/Iter   time:   [179.42 ms 180.15 ms 181.51 ms]
+                        change: [+1.9608% +2.9105% +4.1005%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"KeyOffsets/Sucds/Iter","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Sucds_Iter","iteration_count":[1,2,3,4,5,6,7,8,9,10],"measured_values":[183992500.0,379666292.0,546616042.0,737802083.0,904201708.0,1082923583.0,1264029375.0,1445492500.0,1613064833.0,1787645458.0],"unit":"ns","throughput":[],"typical":{"estimate":180153546.187013,"lower_bound":179423147.17567742,"upper_bound":181509248.75980392,"unit":"ns"},"mean":{"estimate":182106527.87055555,"lower_bound":180416153.73683333,"upper_bound":184220249.84222218,"unit":"ns"},"median":{"estimate":180763452.05,"lower_bound":179902525.44444445,"upper_bound":183992500.0,"unit":"ns"},"median_abs_dev":{"estimate":2206050.527601443,"lower_bound":164475.93457996845,"upper_bound":4807917.631319081,"unit":"ns"},"slope":{"estimate":180153546.187013,"lower_bound":179423147.17567742,"upper_bound":181509248.75980392,"unit":"ns"},"change":{"mean":{"estimate":0.029105036496679615,"lower_bound":0.019607966060908515,"upper_bound":0.041004711321630534,"unit":"%"},"median":{"estimate":0.02219239252100258,"lower_bound":0.0169428692516016,"upper_bound":0.041287857061903126,"unit":"%"},"change":"Regressed"}}
+Benchmarking KeyOffsets/Sucds/RevIter
+Benchmarking KeyOffsets/Sucds/RevIter: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Sucds/RevIter: Collecting 10 samples in estimated 17.995 s (20 iterations)
+Benchmarking KeyOffsets/Sucds/RevIter: Analyzing
+KeyOffsets/Sucds/RevIter
+                        time:   [901.02 ms 905.21 ms 911.12 ms]
+                        change: [+0.8728% +1.6774% +2.6142%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+{"reason":"benchmark-complete","id":"KeyOffsets/Sucds/RevIter","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Sucds_RevIter","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1800332125.0,1796009459.0,1798861292.0,1814967500.0,1816921416.0,1802426958.0,1799619209.0,1807199958.0,1856763458.0,1811092791.0],"unit":"ns","throughput":[],"typical":{"estimate":905209708.3,"lower_bound":901017091.85625,"upper_bound":911122322.9,"unit":"ns"},"mean":{"estimate":905209708.3,"lower_bound":901017091.85625,"upper_bound":911122322.9,"unit":"ns"},"median":{"estimate":902406729.0,"lower_bound":899798354.25,"upper_bound":907483750.0,"unit":"ns"},"median_abs_dev":{"estimate":4533605.0238624215,"lower_bound":776449.8376652598,"upper_bound":9677284.740243852,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":0.016773869651705686,"lower_bound":0.008727551825865543,"upper_bound":0.026141903454979708,"unit":"%"},"median":{"estimate":0.009937616918517023,"lower_bound":0.004307090157638305,"upper_bound":0.022412086114772523,"unit":"%"},"change":"NoChange"}}
+DEBUG: Dataset Size N = 131072000
+Benchmarking KeyOffsets/Array/Build
+Benchmarking KeyOffsets/Array/Build: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Array/Build: Collecting 10 samples in estimated 11.941 s (275 iterations)
+Benchmarking KeyOffsets/Array/Build: Analyzing
+KeyOffsets/Array/Build  time:   [19.741 ms 20.142 ms 20.438 ms]
+                        change: [+2.2545% +3.6741% +5.4647%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"KeyOffsets/Array/Build","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Array_Build","iteration_count":[5,10,15,20,25,30,35,40,45,50],"measured_values":[98296750.0,196056167.0,313506042.0,402939667.0,510127500.0,593521625.0,678659791.0,789437000.0,924159292.0,1023561292.0],"unit":"ns","throughput":[],"typical":{"estimate":20142137.253506493,"lower_bound":19740677.670316305,"upper_bound":20437915.93140312,"unit":"ns"},"mean":{"estimate":20063581.075507935,"lower_bound":19781243.009799603,"upper_bound":20360305.305549603,"unit":"ns"},"median":{"estimate":19965518.758333333,"lower_bound":19659350.0,"upper_bound":20471225.84,"unit":"ns"},"median_abs_dev":{"estimate":592656.9597682363,"lower_bound":92443.1971088061,"upper_bound":827549.227198064,"unit":"ns"},"slope":{"estimate":20142137.253506493,"lower_bound":19740677.670316305,"upper_bound":20437915.93140312,"unit":"ns"},"change":{"mean":{"estimate":0.03674136917452819,"lower_bound":0.022544842784653057,"upper_bound":0.05464744436277439,"unit":"%"},"median":{"estimate":0.032281736212886214,"lower_bound":0.01416246991770942,"upper_bound":0.05969596783313902,"unit":"%"},"change":"Regressed"}}
+{"reason": "custom-metric", "id": "KeyOffsets/Array/Size", "estimate": 1048576000}
+Benchmarking KeyOffsets/Array/RandomGet
+Benchmarking KeyOffsets/Array/RandomGet: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Array/RandomGet: Collecting 10 samples in estimated 11.789 s (20 iterations)
+Benchmarking KeyOffsets/Array/RandomGet: Analyzing
+KeyOffsets/Array/RandomGet
+                        time:   [585.40 ms 591.92 ms 598.60 ms]
+                        change: [+2705.5% +2736.4% +2765.3%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"KeyOffsets/Array/RandomGet","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Array_RandomGet","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1157187000.0,1182636583.0,1159412167.0,1156746083.0,1197933875.0,1203544334.0,1170816958.0,1220860208.0,1186955250.0,1202218208.0],"unit":"ns","throughput":[],"typical":{"estimate":591915533.3,"lower_bound":585404462.885,"upper_bound":598595341.6,"unit":"ns"},"mean":{"estimate":591915533.3,"lower_bound":585404462.885,"upper_bound":598595341.6,"unit":"ns"},"median":{"estimate":592397958.25,"lower_bound":579706083.5,"upper_bound":601109104.0,"unit":"ns"},"median_abs_dev":{"estimate":13406673.052833974,"lower_bound":1151609.9002048373,"upper_bound":19029201.426114142,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":27.364312327035407,"lower_bound":27.054717813425853,"upper_bound":27.653429255254242,"unit":"%"},"median":{"estimate":27.3760939114137,"lower_bound":26.759591702420927,"upper_bound":27.79336120012656,"unit":"%"},"change":"Regressed"}}
+Benchmarking KeyOffsets/Array/Iter
+Benchmarking KeyOffsets/Array/Iter: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Array/Iter: Collecting 10 samples in estimated 10.943 s (605 iterations)
+Benchmarking KeyOffsets/Array/Iter: Analyzing
+KeyOffsets/Array/Iter   time:   [17.641 ms 17.838 ms 18.098 ms]
+                        change: [+0.5560% +1.6046% +2.8035%] (p = 0.01 < 0.05)
+                        Change within noise threshold.
+{"reason":"benchmark-complete","id":"KeyOffsets/Array/Iter","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Array_Iter","iteration_count":[11,22,33,44,55,66,77,88,99,110],"measured_values":[195810458.0,389949833.0,585683708.0,784971084.0,1010642000.0,1161403000.0,1350857667.0,1555255333.0,1810650041.0,1945627292.0],"unit":"ns","throughput":[],"typical":{"estimate":17838121.18205431,"lower_bound":17641208.72553266,"upper_bound":18098018.058726653,"unit":"ns"},"mean":{"estimate":17828038.77510462,"lower_bound":17680268.478967264,"upper_bound":18005860.37921717,"unit":"ns"},"median":{"estimate":17736491.78030303,"lower_bound":17642267.993939392,"upper_bound":18045172.54040404,"unit":"ns"},"median_abs_dev":{"estimate":124700.7986452081,"lower_bound":38278.02726020416,"upper_bound":400214.96555840067,"unit":"ns"},"slope":{"estimate":17838121.18205431,"lower_bound":17641208.72553266,"upper_bound":18098018.058726653,"unit":"ns"},"change":{"mean":{"estimate":0.016046004282722626,"lower_bound":0.00556003358844734,"upper_bound":0.028035481849641403,"unit":"%"},"median":{"estimate":0.012165045064407964,"lower_bound":0.006779346731812241,"upper_bound":0.03018518940897197,"unit":"%"},"change":"NoChange"}}
+Benchmarking KeyOffsets/Array/RevIter
+Benchmarking KeyOffsets/Array/RevIter: Warming up for 100.00 ms
+Benchmarking KeyOffsets/Array/RevIter: Collecting 10 samples in estimated 10.014 s (550 iterations)
+Benchmarking KeyOffsets/Array/RevIter: Analyzing
+KeyOffsets/Array/RevIter
+                        time:   [17.638 ms 17.774 ms 17.968 ms]
+                        change: [+0.2384% +1.3616% +2.7401%] (p = 0.05 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"KeyOffsets/Array/RevIter","report_directory":"/tmp/rust/criterion/reports/KeyOffsets/Array_RevIter","iteration_count":[10,20,30,40,50,60,70,80,90,100],"measured_values":[177893375.0,354175791.0,536204750.0,753127208.0,890934709.0,1063556291.0,1253699166.0,1413837708.0,1575869083.0,1781658958.0],"unit":"ns","throughput":[],"typical":{"estimate":17773866.61896104,"lower_bound":17637787.675,"upper_bound":17968269.631638914,"unit":"ns"},"mean":{"estimate":17865363.677349202,"lower_bound":17705182.581238095,"upper_bound":18104540.324067857,"unit":"ns"},"median":{"estimate":17802963.54,"lower_bound":17699454.766666666,"upper_bound":17873491.666666668,"unit":"ns"},"median_abs_dev":{"estimate":126910.07343089374,"lower_bound":21762.106497645156,"upper_bound":283724.8350268766,"unit":"ns"},"slope":{"estimate":17773866.61896104,"lower_bound":17637787.675,"upper_bound":17968269.631638914,"unit":"ns"},"change":{"mean":{"estimate":0.013615988293690151,"lower_bound":0.0023843461860914377,"upper_bound":0.027401367978207275,"unit":"%"},"median":{"estimate":0.009268969246314596,"lower_bound":0.00011349147994876851,"upper_bound":0.021136399985203447,"unit":"%"},"change":"NoChange"}}
+{"reason":"group-complete","group_name":"KeyOffsets","benchmarks":["KeyOffsets/Sucds/Size","KeyOffsets/Array/Size","KeyOffsets/Pc/Size","KeyOffsets/Pc/Build","KeyOffsets/Pc/RandomGet","KeyOffsets/Pc/Iter","KeyOffsets/Pc/RevIter","KeyOffsets/Sucds/Build","KeyOffsets/Sucds/RandomGet","KeyOffsets/Sucds/Iter","KeyOffsets/Sucds/RevIter","KeyOffsets/Array/Build","KeyOffsets/Array/RandomGet","KeyOffsets/Array/Iter","KeyOffsets/Array/RevIter"],"report_directory":"/tmp/rust/criterion/reports/KeyOffsets"}
+
+DEBUG: Dataset Size N = 131072000
+Benchmarking DocIds/Pc/Build
+Benchmarking DocIds/Pc/Build: Warming up for 100.00 ms
+Benchmarking DocIds/Pc/Build: Collecting 10 samples in estimated 13.713 s (20 iterations)
+Benchmarking DocIds/Pc/Build: Analyzing
+DocIds/Pc/Build         time:   [666.20 ms 670.00 ms 673.85 ms]
+                        change: [-0.3147% +0.3174% +1.0395%] (p = 0.39 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Pc/Build","report_directory":"/tmp/rust/criterion/reports/DocIds/Pc_Build","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1326136625.0,1348648750.0,1330101667.0,1320258125.0,1339100791.0,1333837375.0,1336019500.0,1359925958.0,1353837041.0,1352111750.0],"unit":"ns","throughput":[],"typical":{"estimate":669998879.1,"lower_bound":666195289.6,"upper_bound":673850367.3475,"unit":"ns"},"mean":{"estimate":669998879.1,"lower_bound":666195289.6,"upper_bound":673850367.3475,"unit":"ns"},"median":{"estimate":668780072.75,"lower_bound":664993500.0,"upper_bound":676055875.0,"unit":"ns"},"median_abs_dev":{"estimate":8344118.983112276,"lower_bound":1923040.0250092149,"upper_bound":10875102.463178337,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":0.0031743971449105235,"lower_bound":-0.0031474382679085805,"upper_bound":0.010395164689879393,"unit":"%"},"median":{"estimate":0.0035165416002163052,"lower_bound":-0.005925359400268171,"upper_bound":0.015046330182595602,"unit":"%"},"change":"NoChange"}}
+{"reason": "custom-metric", "id": "DocIds/Pc/Size", "estimate": 197681328}
+Benchmarking DocIds/Pc/RandomGet
+Benchmarking DocIds/Pc/RandomGet: Warming up for 100.00 ms
+Benchmarking DocIds/Pc/RandomGet: Collecting 10 samples in estimated 11.901 s (20 iterations)
+Benchmarking DocIds/Pc/RandomGet: Analyzing
+DocIds/Pc/RandomGet     time:   [570.06 ms 584.29 ms 597.99 ms]
+                        change: [+438.29% +451.37% +464.27%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"DocIds/Pc/RandomGet","report_directory":"/tmp/rust/criterion/reports/DocIds/Pc_RandomGet","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1116536709.0,1100012250.0,1121861625.0,1228143542.0,1122607292.0,1213169792.0,1186692833.0,1204539666.0,1198382167.0,1193821417.0],"unit":"ns","throughput":[],"typical":{"estimate":584288364.65,"lower_bound":570063511.70625,"upper_bound":597987456.4,"unit":"ns"},"mean":{"estimate":584288364.65,"lower_bound":570063511.70625,"upper_bound":597987456.4,"unit":"ns"},"median":{"estimate":595128562.5,"lower_bound":559786000.25,"upper_bound":602887989.75,"unit":"ns"},"median_abs_dev":{"estimate":22535180.08452058,"lower_bound":2526443.0176466703,"upper_bound":35817051.57807022,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":4.513699601826964,"lower_bound":4.382896029907692,"upper_bound":4.642722595894538,"unit":"%"},"median":{"estimate":4.632583612651336,"lower_bound":4.286694592075351,"upper_bound":4.701931748629367,"unit":"%"},"change":"Regressed"}}
+Benchmarking DocIds/Pc/Iter
+Benchmarking DocIds/Pc/Iter: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 10.9s or enable flat sampling.
+Benchmarking DocIds/Pc/Iter: Collecting 10 samples in estimated 10.880 s (55 iterations)
+Benchmarking DocIds/Pc/Iter: Analyzing
+DocIds/Pc/Iter          time:   [185.09 ms 186.07 ms 187.14 ms]
+                        change: [-0.3071% +0.3153% +0.9022%] (p = 0.35 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Pc/Iter","report_directory":"/tmp/rust/criterion/reports/DocIds/Pc_Iter","iteration_count":[1,2,3,4,5,6,7,8,9,10],"measured_values":[187353500.0,373389583.0,552615542.0,743041167.0,938791500.0,1118107708.0,1297841875.0,1480705500.0,1662445833.0,1877683334.0],"unit":"ns","throughput":[],"typical":{"estimate":186067871.87012988,"lower_bound":185089363.4606414,"upper_bound":187142750.54117647,"unit":"ns"},"mean":{"estimate":186110205.52928573,"lower_bound":185363086.82333332,"upper_bound":186857049.67772025,"unit":"ns"},"median":{"estimate":186055788.2083333,"lower_bound":185061092.9047619,"upper_bound":187353500.0,"unit":"ns"},"median_abs_dev":{"estimate":1679276.1264368892,"lower_bound":314953.753248462,"upper_bound":2224065.70283997,"unit":"ns"},"slope":{"estimate":186067871.87012988,"lower_bound":185089363.4606414,"upper_bound":187142750.54117647,"unit":"ns"},"change":{"mean":{"estimate":0.003153073454857269,"lower_bound":-0.0030707507363642687,"upper_bound":0.009021639646719053,"unit":"%"},"median":{"estimate":0.005565299443027305,"lower_bound":-0.0010136139036280856,"upper_bound":0.012958902864254718,"unit":"%"},"change":"NoChange"}}
+Benchmarking DocIds/Pc/RevIter
+Benchmarking DocIds/Pc/RevIter: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 15.3s or enable flat sampling.
+Benchmarking DocIds/Pc/RevIter: Collecting 10 samples in estimated 15.266 s (55 iterations)
+Benchmarking DocIds/Pc/RevIter: Analyzing
+DocIds/Pc/RevIter       time:   [273.42 ms 274.97 ms 277.30 ms]
+                        change: [+1.2943% +2.7384% +5.2031%] (p = 0.01 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"DocIds/Pc/RevIter","report_directory":"/tmp/rust/criterion/reports/DocIds/Pc_RevIter","iteration_count":[1,2,3,4,5,6,7,8,9,10],"measured_values":[276490292.0,608406625.0,824650375.0,1098502917.0,1360465458.0,1637540208.0,1948899333.0,2219404750.0,2465476125.0,2728844875.0],"unit":"ns","throughput":[],"typical":{"estimate":274971693.71168834,"lower_bound":273422740.29122484,"upper_bound":277301544.1078067,"unit":"ns"},"mean":{"estimate":277788531.50285715,"lower_bound":273917222.43500006,"upper_bound":284102697.5086429,"unit":"ns"},"median":{"estimate":274754593.7916666,"lower_bound":272923368.0,"upper_bound":277452241.21428573,"unit":"ns"},"median_abs_dev":{"estimate":2743797.424662799,"lower_bound":644305.9985312643,"upper_bound":5288321.428513527,"unit":"ns"},"slope":{"estimate":274971693.71168834,"lower_bound":273422740.29122484,"upper_bound":277301544.1078067,"unit":"ns"},"change":{"mean":{"estimate":0.0273835241835938,"lower_bound":0.012943208219736642,"upper_bound":0.052031147853285505,"unit":"%"},"median":{"estimate":0.016465958041415707,"lower_bound":0.00935079979123743,"upper_bound":0.027285115452743813,"unit":"%"},"change":"Regressed"}}
+DEBUG: Dataset Size N = 131072000
+Benchmarking DocIds/Sucds/Build
+Benchmarking DocIds/Sucds/Build: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 13.0s.
+Benchmarking DocIds/Sucds/Build: Collecting 10 samples in estimated 13.007 s (10 iterations)
+Benchmarking DocIds/Sucds/Build: Analyzing
+DocIds/Sucds/Build      time:   [1.3005 s 1.3102 s 1.3204 s]
+                        change: [-0.2688% +0.6768% +1.5923%] (p = 0.20 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Sucds/Build","report_directory":"/tmp/rust/criterion/reports/DocIds/Sucds_Build","iteration_count":[1,1,1,1,1,1,1,1,1,1],"measured_values":[1334704791.0,1303286500.0,1326267042.0,1334918750.0,1308058250.0,1316024083.0,1298303792.0,1292256208.0,1287682000.0,1300350000.0],"unit":"ns","throughput":[],"typical":{"estimate":1310185141.6,"lower_bound":1300496917.5325,"upper_bound":1320404237.5475001,"unit":"ns"},"mean":{"estimate":1310185141.6,"lower_bound":1300496917.5325,"upper_bound":1320404237.5475001,"unit":"ns"},"median":{"estimate":1305672375.0,"lower_bound":1296303104.0,"upper_bound":1326267042.0,"unit":"ns"},"median_abs_dev":{"estimate":17619125.424697995,"lower_bound":3693681.374824047,"upper_bound":28603091.126793623,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":0.0067683016540853735,"lower_bound":-0.0026880347608944253,"upper_bound":0.015923269053976927,"unit":"%"},"median":{"estimate":0.0070662572384065925,"lower_bound":-0.003562878020540783,"upper_bound":0.023429548284883195,"unit":"%"},"change":"NoChange"}}
+{"reason": "custom-metric", "id": "DocIds/Sucds/Size", "estimate": 133119811}
+Benchmarking DocIds/Sucds/RandomGet
+Benchmarking DocIds/Sucds/RandomGet: Warming up for 100.00 ms
+Benchmarking DocIds/Sucds/RandomGet: Collecting 10 samples in estimated 15.070 s (20 iterations)
+Benchmarking DocIds/Sucds/RandomGet: Analyzing
+DocIds/Sucds/RandomGet  time:   [687.85 ms 715.13 ms 743.68 ms]
+                        change: [+210.87% +229.63% +247.52%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"DocIds/Sucds/RandomGet","report_directory":"/tmp/rust/criterion/reports/DocIds/Sucds_RandomGet","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1462776458.0,1326038500.0,1299914750.0,1354307042.0,1556719917.0,1422037459.0,1593414958.0,1454252667.0,1374764125.0,1458347708.0],"unit":"ns","throughput":[],"typical":{"estimate":715128679.2,"lower_bound":687850606.35,"upper_bound":743677482.2275,"unit":"ns"},"mean":{"estimate":715128679.2,"lower_bound":687850606.35,"upper_bound":743677482.2275,"unit":"ns"},"median":{"estimate":719072531.5,"lower_bound":675200656.25,"upper_bound":753766906.25,"unit":"ns"},"median_abs_dev":{"estimate":54566706.18459731,"lower_bound":3283032.316714525,"upper_bound":85502065.6930849,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":2.29631375961448,"lower_bound":2.1086889932821853,"upper_bound":2.475173337243504,"unit":"%"},"median":{"estimate":2.3396351938255657,"lower_bound":2.027891330469919,"upper_bound":2.57261329077586,"unit":"%"},"change":"Regressed"}}
+Benchmarking DocIds/Sucds/Iter
+Benchmarking DocIds/Sucds/Iter: Warming up for 100.00 ms
+
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 10.4s or enable flat sampling.
+Benchmarking DocIds/Sucds/Iter: Collecting 10 samples in estimated 10.366 s (55 iterations)
+Benchmarking DocIds/Sucds/Iter: Analyzing
+DocIds/Sucds/Iter       time:   [187.87 ms 188.47 ms 189.19 ms]
+                        change: [-2.9066% -0.9804% +0.2884%] (p = 0.35 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Sucds/Iter","report_directory":"/tmp/rust/criterion/reports/DocIds/Sucds_Iter","iteration_count":[1,2,3,4,5,6,7,8,9,10],"measured_values":[187606125.0,379767167.0,563159666.0,757593292.0,944054333.0,1132807791.0,1328431500.0,1505237625.0,1699561083.0,1874017625.0],"unit":"ns","throughput":[],"typical":{"estimate":188470801.3844156,"lower_bound":187874838.76288658,"upper_bound":189193433.49107143,"unit":"ns"},"mean":{"estimate":188639259.97964284,"lower_bound":188116134.725,"upper_bound":189163719.62380952,"unit":"ns"},"median":{"estimate":188806082.55,"lower_bound":187719888.66666666,"upper_bound":189398323.0,"unit":"ns"},"median_abs_dev":{"estimate":1201814.4021010261,"lower_bound":35871.45694315728,"upper_bound":1568724.2555695742,"unit":"ns"},"slope":{"estimate":188470801.3844156,"lower_bound":187874838.76288658,"upper_bound":189193433.49107143,"unit":"ns"},"change":{"mean":{"estimate":-0.009803650465194047,"lower_bound":-0.029065819907723733,"upper_bound":0.002883513721118294,"unit":"%"},"median":{"estimate":-0.00038597670000783957,"lower_bound":-0.012549593211316323,"upper_bound":0.007846912468875145,"unit":"%"},"change":"NoChange"}}
+Benchmarking DocIds/Sucds/RevIter
+Benchmarking DocIds/Sucds/RevIter: Warming up for 100.00 ms
+Benchmarking DocIds/Sucds/RevIter: Collecting 10 samples in estimated 18.488 s (20 iterations)
+Benchmarking DocIds/Sucds/RevIter: Analyzing
+DocIds/Sucds/RevIter    time:   [933.17 ms 936.93 ms 939.90 ms]
+                        change: [+0.3778% +1.0218% +1.6257%] (p = 0.01 < 0.05)
+                        Change within noise threshold.
+{"reason":"benchmark-complete","id":"DocIds/Sucds/RevIter","report_directory":"/tmp/rust/criterion/reports/DocIds/Sucds_RevIter","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1876697916.0,1876816334.0,1845551916.0,1886694042.0,1875812125.0,1878746583.0,1873732208.0,1864489875.0,1874969084.0,1885053666.0],"unit":"ns","throughput":[],"typical":{"estimate":936928187.45,"lower_bound":933169234.36,"upper_bound":939902545.9,"unit":"ns"},"mean":{"estimate":936928187.45,"lower_bound":933169234.36,"upper_bound":939902545.9,"unit":"ns"},"median":{"estimate":938127510.25,"lower_bound":934864739.75,"upper_bound":940467500.0,"unit":"ns"},"median_abs_dev":{"estimate":1858578.0607536435,"lower_bound":372210.0592419505,"upper_bound":7750029.312859476,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":0.01021846357471734,"lower_bound":0.003778099160069578,"upper_bound":0.016257309436854734,"unit":"%"},"median":{"estimate":0.011421167170068358,"lower_bound":0.004342314726746061,"upper_bound":0.019662116749763037,"unit":"%"},"change":"NoChange"}}
+DEBUG: Dataset Size N = 131072000
+Benchmarking DocIds/Array/Build
+Benchmarking DocIds/Array/Build: Warming up for 100.00 ms
+Benchmarking DocIds/Array/Build: Collecting 10 samples in estimated 11.519 s (275 iterations)
+Benchmarking DocIds/Array/Build: Analyzing
+DocIds/Array/Build      time:   [19.687 ms 19.843 ms 20.043 ms]
+                        change: [-1.2228% +1.1464% +3.6170%] (p = 0.39 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Array/Build","report_directory":"/tmp/rust/criterion/reports/DocIds/Array_Build","iteration_count":[5,10,15,20,25,30,35,40,45,50],"measured_values":[99915458.0,199696584.0,319484750.0,396104916.0,494234958.0,593568334.0,697510500.0,802877375.0,878985583.0,990653292.0],"unit":"ns","throughput":[],"typical":{"estimate":19842993.766753245,"lower_bound":19687285.438867923,"upper_bound":20043428.766169153,"unit":"ns"},"mean":{"estimate":19995887.318579365,"lower_bound":19779074.218081944,"upper_bound":20319162.321705356,"unit":"ns"},"median":{"estimate":19870968.634285714,"lower_bound":19785611.133333333,"upper_bound":20020796.3875,"unit":"ns"},"median_abs_dev":{"estimate":148452.7946684347,"lower_bound":20352.173690676947,"upper_bound":377038.671555564,"unit":"ns"},"slope":{"estimate":19842993.766753245,"lower_bound":19687285.438867923,"upper_bound":20043428.766169153,"unit":"ns"},"change":{"mean":{"estimate":0.011463646091578017,"lower_bound":-0.012228482271887437,"upper_bound":0.036170481715107214,"unit":"%"},"median":{"estimate":0.011459160739575314,"lower_bound":-0.004893611799543174,"upper_bound":0.0269542499014499,"unit":"%"},"change":"NoChange"}}
+{"reason": "custom-metric", "id": "DocIds/Array/Size", "estimate": 1048576000}
+Benchmarking DocIds/Array/RandomGet
+Benchmarking DocIds/Array/RandomGet: Warming up for 100.00 ms
+Benchmarking DocIds/Array/RandomGet: Collecting 10 samples in estimated 12.031 s (20 iterations)
+Benchmarking DocIds/Array/RandomGet: Analyzing
+DocIds/Array/RandomGet  time:   [591.23 ms 596.18 ms 601.18 ms]
+                        change: [+2669.2% +2703.1% +2734.8%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+{"reason":"benchmark-complete","id":"DocIds/Array/RandomGet","report_directory":"/tmp/rust/criterion/reports/DocIds/Array_RandomGet","iteration_count":[2,2,2,2,2,2,2,2,2,2],"measured_values":[1175283875.0,1163486750.0,1195551084.0,1185445958.0,1203419125.0,1206285458.0,1223432833.0,1197683583.0,1183236459.0,1189763250.0],"unit":"ns","throughput":[],"typical":{"estimate":596179418.75,"lower_bound":591234406.25,"upper_bound":601182691.6,"unit":"ns"},"mean":{"estimate":596179418.75,"lower_bound":591234406.25,"upper_bound":601182691.6,"unit":"ns"},"median":{"estimate":596328583.5,"lower_bound":590182458.25,"upper_bound":601709562.5,"unit":"ns"},"median_abs_dev":{"estimate":7480705.020090938,"lower_bound":2145260.6340140104,"upper_bound":14800934.530980885,"unit":"ns"},"slope":null,"change":{"mean":{"estimate":27.030725017884333,"lower_bound":26.69185758493234,"upper_bound":27.348180869032145,"unit":"%"},"median":{"estimate":27.213239679585982,"lower_bound":26.701045527342092,"upper_bound":27.46782222759463,"unit":"%"},"change":"Regressed"}}
+Benchmarking DocIds/Array/Iter
+Benchmarking DocIds/Array/Iter: Warming up for 100.00 ms
+Benchmarking DocIds/Array/Iter: Collecting 10 samples in estimated 10.029 s (550 iterations)
+Benchmarking DocIds/Array/Iter: Analyzing
+DocIds/Array/Iter       time:   [17.620 ms 17.931 ms 18.271 ms]
+                        change: [-2.6653% -0.6478% +1.1331%] (p = 0.56 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Array/Iter","report_directory":"/tmp/rust/criterion/reports/DocIds/Array_Iter","iteration_count":[10,20,30,40,50,60,70,80,90,100],"measured_values":[177900000.0,353732458.0,536649208.0,708988041.0,893921291.0,1077103333.0,1258861708.0,1399789625.0,1582763167.0,1851391500.0],"unit":"ns","throughput":[],"typical":{"estimate":17930551.58857143,"lower_bound":17620188.33138393,"upper_bound":18270677.710703366,"unit":"ns"},"mean":{"estimate":17850106.03043254,"lower_bound":17702840.622375403,"upper_bound":18028487.391636904,"unit":"ns"},"median":{"estimate":17834212.91,"lower_bound":17655479.218055554,"upper_bound":17951722.216666665,"unit":"ns"},"median_abs_dev":{"estimate":196518.11995610577,"lower_bound":54334.6178843662,"upper_bound":392200.1132428883,"unit":"ns"},"slope":{"estimate":17930551.58857143,"lower_bound":17620188.33138393,"upper_bound":18270677.710703366,"unit":"ns"},"change":{"mean":{"estimate":-0.006477625347871663,"lower_bound":-0.026652597654518294,"upper_bound":0.011330745767486087,"unit":"%"},"median":{"estimate":0.00011894762660591418,"lower_bound":-0.024202409599546004,"upper_bound":0.018434483987810113,"unit":"%"},"change":"NoChange"}}
+Benchmarking DocIds/Array/RevIter
+Benchmarking DocIds/Array/RevIter: Warming up for 100.00 ms
+Benchmarking DocIds/Array/RevIter: Collecting 10 samples in estimated 10.007 s (550 iterations)
+Benchmarking DocIds/Array/RevIter: Analyzing
+DocIds/Array/RevIter    time:   [17.682 ms 17.801 ms 18.068 ms]
+                        change: [-2.5797% +0.1314% +2.3942%] (p = 0.93 > 0.05)
+                        No change in performance detected.
+{"reason":"benchmark-complete","id":"DocIds/Array/RevIter","report_directory":"/tmp/rust/criterion/reports/DocIds/Array_RevIter","iteration_count":[10,20,30,40,50,60,70,80,90,100],"measured_values":[181832875.0,371197000.0,549703708.0,739459125.0,929646542.0,1056691125.0,1247576291.0,1417315500.0,1583263792.0,1769266042.0],"unit":"ns","throughput":[],"typical":{"estimate":17800817.284155846,"lower_bound":17681861.565320477,"upper_bound":18068499.166060608,"unit":"ns"},"mean":{"estimate":18058096.46723016,"lower_bound":17821426.28110357,"upper_bound":18302141.83997381,"unit":"ns"},"median":{"estimate":18002902.971428573,"lower_bound":17663981.25,"upper_bound":18486478.125,"unit":"ns"},"median_abs_dev":{"estimate":527759.7659353914,"lower_bound":74753.06791220125,"upper_bound":625217.0420251787,"unit":"ns"},"slope":{"estimate":17800817.284155846,"lower_bound":17681861.565320477,"upper_bound":18068499.166060608,"unit":"ns"},"change":{"mean":{"estimate":0.00131375794177635,"lower_bound":-0.025797093958968575,"upper_bound":0.023941523639656664,"unit":"%"},"median":{"estimate":0.013246445919223637,"lower_bound":-0.01270153350931258,"upper_bound":0.04046321237453987,"unit":"%"},"change":"NoChange"}}
+{"reason":"group-complete","group_name":"DocIds","benchmarks":["DocIds/Sucds/Size","DocIds/Array/Size","DocIds/Pc/Size","DocIds/Pc/Build","DocIds/Pc/RandomGet","DocIds/Pc/Iter","DocIds/Pc/RevIter","DocIds/Sucds/Build","DocIds/Sucds/RandomGet","DocIds/Sucds/Iter","DocIds/Sucds/RevIter","DocIds/Array/Build","DocIds/Array/RandomGet","DocIds/Array/Iter","DocIds/Array/RevIter"],"report_directory":"/tmp/rust/criterion/reports/DocIds"}
+

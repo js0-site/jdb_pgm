@@ -1,0 +1,69 @@
+[package]
+name = "jdb_pc"
+version = "0.1.0"
+edition = "2024"
+description = "Probabilistic Compressed data structures / 概率压缩数据结构"
+license-file = "LICENSE.md"
+repository = "https://github.com/js0-site/jdb_pgm.git"
+keywords = [
+  "compression",
+  "probabilistic",
+  "data-structures",
+  "succinct",
+  "database",
+]
+categories = ["algorithms", "data-structures"]
+authors = ["jssite@googlegroups.com"]
+homepage = "https://github.com/js0-site/jdb_pgm/tree/main/jdb_pc"
+autobenches = false
+autoexamples = false
+
+[dependencies]
+rand_distr = "0.5.1"
+sucds = "0.8.3"
+
+[dependencies.jdb_pgm_lib]
+path = "../jdb_pgm_lib"
+version = "0.1.0"
+
+[dependencies.clap]
+version = "4.5.54"
+features = ["derive"]
+
+[dev-dependencies]
+aok = "0.1.18"
+humansize = "2.1.3"
+rand = "0.9"
+rapidhash = "4.2.1"
+
+[dev-dependencies.criterion]
+version = "0.8"
+features = ["html_reports"]
+
+
+[[bench]]
+name = "main"
+harness = false
+
+[features]
+default = []
+bench-pc = []
+bench-sucds = []
+bench-array = []
+bench = ["bench-pc", "bench-sucds", "bench-array"]
+
+[[example]]
+name = "pc_example"
+path = "examples/main.rs"
+
+[[example]]
+name = "score"
+path = "examples/score.rs"
+
+[[test]]
+name = "pc_tests"
+path = "tests/pc.rs"
+
+[[test]]
+name = "compression_tests"
+path = "tests/compression.rs"
