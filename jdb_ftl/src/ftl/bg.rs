@@ -202,7 +202,7 @@ pub fn process_group<C: Conf>(
   let (new_header, mut chunks) = encode(
     dense_ppas, // Use dense array
     // 使用密集数组
-    &dense_dirty_map,
+    dense_dirty_map,
     old_pgm_payload,
     C::PGM_EPSILON,
   );

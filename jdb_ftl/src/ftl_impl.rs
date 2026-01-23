@@ -52,7 +52,7 @@ impl<C: Conf> FtlTrait for Ftl<C> {
 
       // Fast Header access from fused storage.
       // 从融合存储中快速访问页眉。
-      let header = unsafe { Head::from_bytes(storage) };
+      let header = Head::from_bytes(storage);
 
       // Fast path exit for empty groups.
       // 空组的快速退出路径。
@@ -61,7 +61,7 @@ impl<C: Conf> FtlTrait for Ftl<C> {
       }
 
       let payload = storage.get_unchecked(Head::SIZE..);
-      let pba = codec::decode(*header, (lba % n as u64) as usize, payload, n);
+      let pba = codec::decode(header, (lba % n as u64) as usize, payload, n);
 
       if pba == u64::MAX { None } else { Some(pba) }
     }

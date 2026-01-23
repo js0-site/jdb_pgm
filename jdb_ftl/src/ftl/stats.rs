@@ -56,7 +56,7 @@ impl FtlStats {
       let payload = unsafe { storage.get_unchecked(Head::SIZE..) };
 
       // Decode to get valid items count
-      crate::ftl::codec::decode_group(*header, payload, &mut buf);
+      crate::ftl::codec::decode_group(header, payload, &mut buf);
       let valid_items = buf.iter().filter(|&&v| v != u64::MAX).count();
       stats.total_bytes_logical += valid_items * 8; // 8 bytes per PBA
 

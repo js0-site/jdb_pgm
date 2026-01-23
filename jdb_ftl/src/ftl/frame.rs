@@ -125,8 +125,6 @@ impl Head {
   }
 }
 
-
-
 /// Represents a physical storage frame (Used in higher-level APIs).
 #[derive(Debug, Clone)]
 pub struct Frame {
