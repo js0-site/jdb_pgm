@@ -1,0 +1,10 @@
+export const METRIC = "Metric",
+  CURRENT = "Current",
+  PREVIOUS = "Previous",
+  CHANGE = "Change",
+  GET = "GET",
+  SET = "SET",
+  RM = "RM",
+  MEMORY = "Memory Used",
+  TITLE = "Regression Report",
+  UNIT_MILLION = "Million";

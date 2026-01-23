@@ -1,0 +1,13 @@
+doctype html
+html(lang=lang)
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title=title
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css")
+    script(type="module").
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true, theme: 'default' });
+      window.mermaid = mermaid;
+  body
+    != body

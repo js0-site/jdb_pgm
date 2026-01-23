@@ -1,0 +1,14 @@
+export const METRIC = "Metric";
+export const TIME = "Time";
+export const THROUGHPUT = "Throughput";
+export const MEMORY = "Memory";
+export const PC = "Pc";
+export const SUCDS = "Sucds";
+export const ARRAY = "Array";
+export const BUILD = "Build";
+export const RANDOM_GET = "RandomGet";
+export const ITER = "Iter";
+export const REV_ITER = "RevIter";
+export const SIZE = "Size";
+export const RATIO = "Ratio";
+export const LATENCY_AVG = "Latency Avg";

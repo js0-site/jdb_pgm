@@ -1,0 +1,14 @@
+export const METRIC = "指标";
+export const TIME = "耗时";
+export const THROUGHPUT = "吞吐量";
+export const MEMORY = "内存";
+export const PC = "Pc";
+export const SUCDS = "Sucds";
+export const ARRAY = "原生数组";
+export const BUILD = "构建";
+export const RANDOM_GET = "随机读取";
+export const ITER = "顺序遍历";
+export const REV_ITER = "逆向遍历";
+export const SIZE = "占用空间";
+export const RATIO = "压缩率";
+export const LATENCY_AVG = "平均延迟";

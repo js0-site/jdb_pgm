@@ -1,0 +1,15 @@
+[package]
+name = "jdb_pgm_lib"
+version = "0.1.0"
+edition = "2024"
+description = "Core library for jdb_pgm project / jdb_pgm 核心库"
+license = "MulanPSL-2.0"
+repository = "https://github.com/js0-site/jdb_pgm.git"
+keywords = ["learned-index", "pgm-index", "bits", "error-handling"]
+categories = ["algorithms", "data-structures", "no-std"]
+authors = ["jssite@googlegroups.com"]
+homepage = "https://github.com/js0-site/jdb_pgm/tree/main/jdb_pgm_lib"
+
+[dependencies]
+thiserror = "2.0.18"
+# Add other dependencies if needed (e.g. log, etc from original Cargo.toml)
